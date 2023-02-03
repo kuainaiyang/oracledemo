@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: ${MYSQL.DATASOURCE.USERNAME:ztdemo}
+    password: ${MYSQL.DATASOURCE.PASSWORD:NsHdJcS2ftsmHCma}
+    url: ${MYSQL.DATASOURCE.URL:jdbc:oracle:thin:@192.168.0.187:1521:xe}
+
+springfox:
+  documentation:
+    enabled: true
+
+log:
+  path: /tmp/log/web-pro

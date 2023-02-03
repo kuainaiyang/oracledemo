@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER.PORT:8887}
+  servlet:
+    context-path: /web
+
+spring:
+  profiles:
+    active: ${SPRING.PROFILES.ACTIVE:@spring.profiles.active@}
+  application:
+    name: demo
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
